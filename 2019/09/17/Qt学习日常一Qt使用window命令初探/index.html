@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>Qt学习日常一Qt使用window命令初探 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="#Qt学习过程   刚开始学习qt，属于还没有入门的那种，以前也很少直接去使用window自带的那种命令，所以呢，这次想要实现一个强制关机的命令，使用window的命令。   我首先想到的时Qt中的QProcess类，然后使用它调用start函数来调用cmd的命令。  命令呢，当然都懂，使用 shutdown -s当然呢，这里的确是出了问题的，因为这个类再命令结束的时候才会结束，反正大概意思就是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Qt学习日常一Qt使用window命令初探">
+<meta property="og:url" content="http://yoursite.com/2019/09/17/Qt学习日常一Qt使用window命令初探/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#Qt学习过程   刚开始学习qt，属于还没有入门的那种，以前也很少直接去使用window自带的那种命令，所以呢，这次想要实现一个强制关机的命令，使用window的命令。   我首先想到的时Qt中的QProcess类，然后使用它调用start函数来调用cmd的命令。  命令呢，当然都懂，使用 shutdown -s当然呢，这里的确是出了问题的，因为这个类再命令结束的时候才会结束，反正大概意思就是">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-16T16:41:30.589Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Qt学习日常一Qt使用window命令初探">
+<meta name="twitter:description" content="#Qt学习过程   刚开始学习qt，属于还没有入门的那种，以前也很少直接去使用window自带的那种命令，所以呢，这次想要实现一个强制关机的命令，使用window的命令。   我首先想到的时Qt中的QProcess类，然后使用它调用start函数来调用cmd的命令。  命令呢，当然都懂，使用 shutdown -s当然呢，这里的确是出了问题的，因为这个类再命令结束的时候才会结束，反正大概意思就是">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Qt学习日常一Qt使用window命令初探" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Qt学习日常一Qt使用window命令初探" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/09/17/Qt学习日常一Qt使用window命令初探/" class="article-date">
   <time datetime="2019-09-16T16:34:22.000Z" itemprop="datePublished">2019-09-17</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/17/Qt学习日常一Qt使用window命令初探/">Qt学习日常一Qt使用window命令初探</a>
+    <h1 class="article-title" itemprop="name">
+      Qt学习日常一Qt使用window命令初探
     </h1>
   
 
@@ -113,99 +115,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-my-another-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/10/my-another-blog/" class="article-date">
-  <time datetime="2019-09-10T15:48:53.000Z" itemprop="datePublished">2019-09-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/10/my-another-blog/">my another blog</a>
-    </h1>
+    <a href="/2019/09/10/my-another-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">my another blog</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="旧事重提"><a href="#旧事重提" class="headerlink" title="#旧事重提"></a>#旧事重提</h2><p><strong>当然这是我的又一个blog，虽然当时并没有想开，但是由于我的我的疏忽，当时大一创建的一个博客由于没钱放弃掉了，直接结果旧事我好长时间没有写博客，还导致一件事，采用个人的一个博客系统由于本人的疏忽，在一次重装系统过后就只剩下原来的程序代码，所以再重新开的时候也只有这些了，没办法。</strong></p>
-<hr>
-<p>毕竟到了大三了，为了以后的校招和考研，还是忍痛决定传上去一个吧，虽然可能是很久以后，但不会很久，当然了这篇文章是我在不怎么熟悉的markdown环境下，配上window加git的命令行以及vim编辑器写出来的，样式可能难看的要死，所以也就不多写，以后不定期的会将我在本地电脑上的一些博客上传上来，当然要深思熟虑以后。我用这个hexo生成博客是在某r大佬的影响下，慢慢完善。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/10/my-another-blog/" data-id="ck0mn7k0g00006crhx2q5f4ut" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/10/hello-world/" class="article-date">
-  <time datetime="2019-09-10T15:40:43.139Z" itemprop="datePublished">2019-09-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/10/hello-world/" data-id="ck0mn7k0r00026crhh1i90xg1" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
